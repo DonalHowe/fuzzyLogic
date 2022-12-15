@@ -3,6 +3,6 @@
 
 class ScreenSize {
 public:
-	static const int M_HEIGHT = 800;
-	static const int M_WIDTH = 800;
+	static const int M_HEIGHT = 1800;
+	static const int M_WIDTH = 1800;
 };

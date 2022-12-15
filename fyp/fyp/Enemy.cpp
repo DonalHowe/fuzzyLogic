@@ -10,10 +10,11 @@ Enemy::~Enemy()
 {
 }
 
-void Enemy::render(sf::RenderWindow& t_window)
+void Enemy::setColor(sf::Color t_color)
 {
-	t_window.draw(m_sprite);
+	m_sprite.setFillColor(t_color);
 }
+
 
 void Enemy::update(sf::Time t_deltaTime)
 {
