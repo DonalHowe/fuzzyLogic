@@ -6,7 +6,7 @@ Game::Game() :
 	m_window{ sf::VideoMode{ ScreenSize::M_WIDTH, ScreenSize::M_HEIGHT, 32U }, "Ai Labs" }, m_exitGame{ false }
 {
 	placeForce();
-	m_rect.setSize(sf::Vector2f{ 450,800 });
+	m_rect.setSize(sf::Vector2f{ 400,800 });
 	m_rect.setPosition(0, ScreenSize::M_HEIGHT - m_rect.getSize().y);
 	m_rect.setFillColor(sf::Color::Black);
 	if (!m_font.loadFromFile("BebasNeue.otf"))
@@ -17,11 +17,11 @@ Game::Game() :
 	for (int i = 0; i < 12; i++)
 	{
 		m_textArray[i].setFont(m_font);
-		m_textArray[i].setCharacterSize(50u);
+		m_textArray[i].setCharacterSize(55u);
 		m_textArray[i].setFillColor(sf::Color::Cyan);
 		m_textArray[i].setPosition(10, yPosText);
 
-		yPosText += 50;
+		yPosText += 100;
 	}
 	m_textArray[0].setString("press r to reset");
 	int i = 0;
@@ -239,27 +239,28 @@ void Game::update(sf::Time t_deltaTime)
 	
 	for (int i = 0; i < enemyCount; i++)
 	{
-	/*	if (m_Large == 1)
+		if (low > 0)
 		{
 
 			m_Enemy.at(i).setColor(sf::Color::Black);
 
-		}*/
-	/*	else if (m_Moderate == 0.2)
+		}
+		
+		if (medium > 0)
 		{
+
 			m_Enemy.at(i).setColor(sf::Color::Cyan);
+
 		}
-		else if (m_Tiny == 1)
+		
+		if (high > 0)
 		{
-			m_Enemy.at(i).setColor(sf::Color::Black);
+
+			m_Enemy.at(i).setColor(sf::Color::Magenta);
+
 		}
-		else if (m_Small == 1)
-		{
-			m_Enemy.at(i).setColor(sf::Color::Black);
-		}
-		else {
-			m_Enemy.at(i).setColor(sf::Color::Red);
-		}*/
+	
+	
 	}
 	
 	

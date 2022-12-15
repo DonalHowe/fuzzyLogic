@@ -6,7 +6,7 @@
 #include "ScreenSize.h"
 #include "Enemy.h"
 #include "Player.h"
-
+#include <vector>
 
 enum class state {
 	low,
