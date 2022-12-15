@@ -10,6 +10,11 @@ Enemy::~Enemy()
 {
 }
 
+void Enemy::setTriangleShape()
+{
+	m_sprite = sf::CircleShape(80, 3);
+}
+
 void Enemy::setColor(sf::Color t_color)
 {
 	m_sprite.setFillColor(t_color);

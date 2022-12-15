@@ -41,12 +41,12 @@ private:
 	double FuzzyNOT(double A);
 	double Defuzification();
 	void reset();
-	void placeForce();
+	void initialForcePLacement();
 	double enemyCount=25;
 	double low;
 	double medium;
 	double high;
-	bool resetForce;
+	bool resetFuzzy;
 	double range;
 	double force;
 
@@ -54,14 +54,14 @@ private:
 	void setSizeAndRangeOFEnemies();
 
 
-	double m_Tiny;
-	double m_Small;
-	double m_Moderate;
-	double m_Large;
+	double m_forceSize_tiny;
+	double m_forceSize_small;
+	double m_forceSize_moderate;
+	double m_forceSize_large;
 
-	double m_Close;
-	double m_Medium;
-	double m_Far;
+	double m_Range_Close;
+	double m_Range_Medium;
+	double m_Range_Far;
 
 
 	sf::RenderWindow m_window; 
